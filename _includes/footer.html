@@ -1,0 +1,49 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              {{ site.title | escape }}
+            {%- endif -%}
+            </li>
+            {%- if site.encoded_email -%}
+            <li id="email"><p class="u-email">{{ site.placeholder_email }}</p></li>
+            {%- endif -%}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        {%- include social.html -%}
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{- site.description | escape -}}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+{%- if site.encoded_email -%}
+<script>
+document.addEventListener("DOMContentLoaded", function(event) { 
+    // a bit of javascript hackery to obfuscate email address!
+    var s = '{{site.encoded_email}}';
+    var el = document.getElementById("email");
+    var txt = document.createElement("textarea");
+    txt.innerHTML = s;
+    var e = txt.value.split("").reverse().join("");
+    el.innerHTML = '<a class="u-email" href="mailto:'+e+'">'+e+'</a>';
+});
+</script>
+{%- endif -%}

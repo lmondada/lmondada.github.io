@@ -21,6 +21,8 @@
 title: Luca Mondada
 tagline: Quantum Machine Learning PhD
 email: luca.mondada@cs.ox.ac.uk
+placeholder_email: first name at last name dot net
+encoded_email: "&#107;&#117;&#046;&#099;&#097;&#046;&#120;&#111;&#046;&#115;&#099;&#064;&#097;&#100;&#097;&#100;&#110;&#111;&#109;&#046;&#097;&#099;&#117;&#108;"
 description: >- # this means to ignore newlines until "baseurl:"
   DPhil Oxford Quantum Group. 
   I am a PhD student at the University of Oxford, focusing on near-term
@@ -45,6 +47,9 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+kramdown:
+  entity_output: :as_input
 
 # Exclude from processing.
 # The following items will not be processed, by default.
