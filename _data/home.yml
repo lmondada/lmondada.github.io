@@ -1,9 +1,9 @@
 navbar_entries:
   - title: about
-    url: "#"
+    url: "/"
 
   - title: my research
-    url: "#current-research"
+    url: "/#current-research"
 
   - title: CV
     url: cv
@@ -23,7 +23,3 @@ footer_entries:
     url: https://linkedin.com/in/lmondada
     class: social
     icon: linkedin
-
-footer_social:
-  github: lmondada
-  twitter: lmondada
