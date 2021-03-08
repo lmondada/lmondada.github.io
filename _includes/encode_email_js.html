@@ -1,0 +1,16 @@
+{%- if site.encoded_email -%}
+<script type="text/javascript">
+document.addEventListener("turbolinks:load", function(event) { 
+    // a bit of javascript hackery to obfuscate email address!
+    let encoded_email = '{{site.encoded_email}}';
+    let all_emails = document.getElementsByClassName("encoded-email");
+    let txt = document.createElement("textarea");
+    txt.innerHTML = encoded_email;
+    let email = txt.value.split("").reverse().join("");
+    for (var i = 0; i < all_emails.length; i++) {
+        let el = all_emails.item(i);
+        el.innerHTML = '<a class="u-email" href="mailto:'+email+'">'+email+'</a>';
+    }
+});
+</script>
+{%- endif -%}

@@ -1,0 +1,29 @@
+navbar_entries:
+  - title: about
+    url: "#"
+
+  - title: my research
+    url: "#current-research"
+
+  - title: CV
+    url: cv
+
+footer_entries:
+  - title: first name at surname dot net
+    class: encoded-email
+  - title: lmondada
+    url: https://github.com/lmondada
+    class: social
+    icon: github
+  - title: "@lmondada"
+    url: https://twitter.com/lmondada
+    class: social
+    icon: twitter
+  - title: in/lmondada
+    url: https://linkedin.com/in/lmondada
+    class: social
+    icon: linkedin
+
+footer_social:
+  github: lmondada
+  twitter: lmondada

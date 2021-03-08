@@ -1,0 +1,19 @@
+<ul class="horizontal-list">
+  {% for item in include.collection %}
+    <li {% if item.class %}class="{{ item.class }}"{% endif %}>
+      {% if item.url %}
+        <a href="{{ item.url }}"
+            {%- if item.class == "social" %} target="_blank" {% endif %}>
+          {% if item.icon %}
+            <svg class="svg-icon">
+              <use xlink:href="{{ '/assets/icons.svg#' | append: item.icon | relative_url }}"></use>
+            </svg>{% endif %}
+          {{- item.title -}}
+        </a>
+      {% else %}
+        <span>{{ item.title }}</span>
+      {% endif %}
+      &nbsp;&nbsp;
+    </li>
+  {% endfor %}
+</ul>

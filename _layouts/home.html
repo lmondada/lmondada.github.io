@@ -2,13 +2,14 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+<header>
+    <h1>{{ site.title }}</h1>
+    {% if site.theme_config.show_description == true %}
+      <p>{{ site.description }}</p>
+    {% endif %}
+</header>
 
-  {{ content }}
+<main aria-label="Content">
+    {{ content }}
+</main>
 
-  Site under construction.
-
-</div>

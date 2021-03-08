@@ -1,55 +1,43 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Luca Mondada
+author: Luca Mondada
 tagline: Quantum Machine Learning PhD
+
 email: luca.mondada@cs.ox.ac.uk
 placeholder_email: first name at last name dot net
 encoded_email: "&#107;&#117;&#046;&#099;&#097;&#046;&#120;&#111;&#046;&#115;&#099;&#064;&#097;&#100;&#097;&#100;&#110;&#111;&#109;&#046;&#097;&#099;&#117;&#108;"
+
 description: >- # this means to ignore newlines until "baseurl:"
-  DPhil Oxford Quantum Group. 
-  I am a PhD student at the University of Oxford, focusing on near-term
-  applications of quantum computing. I am particularly excited about the
-  potential of Differentiable Programming paradigms in quantum computer science.
-  Stay tuned for research output!
+  DPhil student at the University of Oxford and part-time Research Software Developer at Cambridge Quantum Computing.
+  My research interests lie mainly in the areas of quantum circuit optimisation and near-term applications of differential programming
+  to NISQ devices.
+  I previously obtained a Distinction for his MSc in Mathematics and Foundation of Computer Science at Oxford
+  and two BSc degrees in Physics and Computer Science at ETH Zürich.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://luca.mondada.net" # the base hostname & protocol for your site, e.g. http://example.com
+
 # twitter_username: jekyllrb
 twitter:
-  username: benbalter
+  username: lmondada
   card: summary_large_image
+
 social:
   name: Luca Mondada
   links:
     - https://github.com/lmondada
+    - https://twitter.com/lmondada
+    - https://www.linkedin.com/in/lmondada
 
 github_username:  lmondada
 
-# Build settings
-theme: minima
+theme: moonwalk
+kramdown:
+  entity_output: :as_input
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-kramdown:
-  entity_output: :as_input
 
 # Exclude from processing.
 # The following items will not be processed, by default.

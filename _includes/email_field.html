@@ -1,0 +1,5 @@
+{% if site.encoded_email %}
+   <li class="encoded-email"><p class="u-email">{{ site.placeholder_email }}</p></li>
+{% elsif site.email %}
+   <li class="email"><p class="u-email">{{ site.email }}</p></li>
+{% endif %}

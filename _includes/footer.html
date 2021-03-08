@@ -3,8 +3,6 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
@@ -15,9 +13,7 @@
               {{ site.title | escape }}
             {%- endif -%}
             </li>
-            {%- if site.encoded_email -%}
-            <li id="email"><p class="u-email">{{ site.placeholder_email }}</p></li>
-            {%- endif -%}
+            {%- include email_field.html -%}
         </ul>
       </div>
 
@@ -33,17 +29,3 @@
   </div>
 
 </footer>
-
-{%- if site.encoded_email -%}
-<script>
-document.addEventListener("DOMContentLoaded", function(event) { 
-    // a bit of javascript hackery to obfuscate email address!
-    var s = '{{site.encoded_email}}';
-    var el = document.getElementById("email");
-    var txt = document.createElement("textarea");
-    txt.innerHTML = s;
-    var e = txt.value.split("").reverse().join("");
-    el.innerHTML = '<a class="u-email" href="mailto:'+e+'">'+e+'</a>';
-});
-</script>
-{%- endif -%}
