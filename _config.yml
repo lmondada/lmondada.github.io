@@ -31,6 +31,8 @@ social:
 github_username:  lmondada
 
 theme: moonwalk
+theme_config:
+  appearance: "auto"
 kramdown:
   entity_output: :as_input
 
