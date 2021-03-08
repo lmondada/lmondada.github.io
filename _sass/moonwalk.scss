@@ -32,6 +32,20 @@ p { margin: 1em 0; }
 
 li { margin: 0.4em 0; }
 
+main ul {
+  list-style: none;
+  padding: 0px;
+  li {
+    display: table;
+  }
+  li:before {
+    display: table-cell;
+    content: '»';
+    padding: 0 10px 0 5px;    /* any design */
+    font-size: 150%;
+  }
+}
+
 .contents {
   max-width: 720px;
   margin: 0 auto;
