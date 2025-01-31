@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="html" data-theme="auto"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>
+    
+      Luca Mondada | DPhil Oxford Quantum Group
+    
+  </title>
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Luca Mondada DPhil Oxford Quantum Group" />
+<meta name="author" content="Luca Mondada" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="&#8220;Close-to-done&#8221; PhD student at the University of Oxford and Software Engineer at Quantinuum. My research interests lie mainly in the intersection of quantum compilation, graph transformation systems and high-performance computing for Quantum. I previously obtained a MSc in Mathematics and Foundation of Computer Science (with Distinction) at the University of Oxford and two BSc degrees in Physics and Computer Science at ETH Zürich." />
+<meta property="og:description" content="&#8220;Close-to-done&#8221; PhD student at the University of Oxford and Software Engineer at Quantinuum. My research interests lie mainly in the intersection of quantum compilation, graph transformation systems and high-performance computing for Quantum. I previously obtained a MSc in Mathematics and Foundation of Computer Science (with Distinction) at the University of Oxford and two BSc degrees in Physics and Computer Science at ETH Zürich." />
+<link rel="canonical" href="https://luca.mondada.net/" />
+<meta property="og:url" content="https://luca.mondada.net/" />
+<meta property="og:site_name" content="Luca Mondada" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Luca Mondada DPhil Oxford Quantum Group" />
+<meta name="twitter:site" content="@lmondada" />
+<meta name="twitter:creator" content="@Luca Mondada" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Luca Mondada"},"headline":"Luca Mondada DPhil Oxford Quantum Group","description":"&#8220;Close-to-done&#8221; PhD student at the University of Oxford and Software Engineer at Quantinuum. My research interests lie mainly in the intersection of quantum compilation, graph transformation systems and high-performance computing for Quantum. I previously obtained a MSc in Mathematics and Foundation of Computer Science (with Distinction) at the University of Oxford and two BSc degrees in Physics and Computer Science at ETH Zürich.","sameAs":["https://github.com/lmondada","https://twitter.com/lmondada","https://www.linkedin.com/in/lmondada"],"url":"https://luca.mondada.net/","@type":"WebSite","name":"Luca Mondada","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link type="application/atom+xml" rel="alternate" href="https://luca.mondada.net/feed.xml" title="Luca Mondada" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="/./logo.png" />
+  <link rel="stylesheet" href="https://luca.mondada.net/assets/css/main.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" defer></script>
+<script type="text/javascript">
+  document.addEventListener('turbolinks:load', themeChange);
+    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+    if (currentTheme)
+      document.documentElement.setAttribute('data-theme', currentTheme);
+
+    function themeChange(){
+        let button = document.querySelector('.theme-toggle');
+
+        button.addEventListener('click', function(e){
+            let currentTheme = document.documentElement.getAttribute('data-theme');
+            if(currentTheme === 'dark') {
+                transition();
+                document.documentElement.setAttribute('data-theme','light');
+                localStorage.setItem('theme', 'light');
+            } else {
+                transition();
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+              }
+          });
+
+        let transition = () =>{
+            document.documentElement.classList.add('transition');
+            window.setTimeout(()=>{
+                document.documentElement.classList.remove('transition');
+              }, 1000);
+          }
+      }
+</script>
+
+
+  <script type="text/javascript">
+document.addEventListener("turbolinks:load", function(event) { 
+    // a bit of javascript hackery to obfuscate email address!
+    let encoded_email = '&#107;&#117;&#046;&#099;&#097;&#046;&#120;&#111;&#046;&#115;&#099;&#064;&#097;&#100;&#097;&#100;&#110;&#111;&#109;&#046;&#097;&#099;&#117;&#108;';
+    let all_emails = document.getElementsByClassName("encoded-email");
+    let txt = document.createElement("textarea");
+    txt.innerHTML = encoded_email;
+    let email = txt.value.split("").reverse().join("");
+    for (var i = 0; i < all_emails.length; i++) {
+        let el = all_emails.item(i);
+        el.innerHTML = '<a class="u-email" href="mailto:'+email+'">'+email+'</a>';
+    }
+});
+</script>
+</head>
+<body>
+    <div class="contents">
+    
+      <nav>
+        <ul class="horizontal-list">
+  
+    <li >
+      
+        <a href="/">
+          about</a>
+      
+      &nbsp;&nbsp;
+    </li>
+  
+    <li >
+      
+        <a href="/#current-research">
+          my research</a>
+      
+      &nbsp;&nbsp;
+    </li>
+  
+    <li >
+      
+        <a href="cv">
+          CV</a>
+      
+      &nbsp;&nbsp;
+    </li>
+  
+</ul>
+
+      </nav>
+      <div class="dashed"></div>
+    
+
+    <header>
+    <h1>Luca Mondada</h1>
+    
+      <p>"Close-to-done" PhD student at the University of Oxford and Software Engineer at Quantinuum. My research interests lie mainly in the intersection of quantum compilation, graph transformation systems and high-performance computing for Quantum. I previously obtained a MSc in Mathematics and Foundation of Computer Science (with Distinction) at the University of Oxford and two BSc degrees in Physics and Computer Science at ETH Zürich.</p>
+    
+</header>
+
+<main aria-label="Content">
+    <h2 id="current-research">Current research</h2>
+<p>Quantum compilation needs to scale up to
+<em>i)</em> handle large programs,
+<em>ii)</em> leverage everything from heterogenous HPC environment, and
+<em>iii)</em> generalise to non-unitary operations, real-time control flow, error correction etc.</p>
+
+<p>We argue that interpreting quantum compilation as a graph transformation
+system (GTS) is an elegant, flexible and scalable design for quantum compilers
+that will enable these goals.
+My recent contributions (to be pubished with my thesis) resolve the main
+bottlenecks that GTS-based program optimisation faces, namely the slow rule
+pattern matching in large rule systems and 
+the difficulty of optimal rule application ordering, a.k.a. the phase ordering
+problem, as it is known in classical compilation.</p>
+
+<p>The first problem is solved by the introduction of a rule pre-compilation step,
+during which all rules to be applied are aggregated into a <em>pattern matcher</em>,
+a finite state automaton-like data structure that can be used to efficiently
+to traverse a program graph and find all possible rule applications.
+The paper [2] proves asymptotic bounds on the runtime of this approach for
+the case of quantum circuits&#8212;with a runtime that is independent of the number
+of rules in the system.</p>
+
+<p>For optimal rule ordering, on the other hand, we propose a distributed search
+algorithm that relies on the local Church-Rosser theorem to decompose the
+search space into local problems that can be solved independently.
+An MPI-based protocol is then used to merge local results into a provably optimal
+global solution (within the explored search space), using a SAT solver.</p>
+
+<p>Stay tuned for my thesis, coming soon! Oh, and don&#8217;t hesitate to reach out in
+the meantime, always happy to chat.</p>
+
+<h2 id="publications">Publications</h2>
+<ol>
+  <li>Koch M., Borgna A., Sivarajah S., et al. &#8220;HUGR: A Quantum-Classical Intermediate Representation.&#8221;
+  <em>Fifth International Workshop on Programming Languages for Quantum Computing, PLanQC 2025</em>. [<a href="https://quantum-compilers.github.io/iwqc2024/papers/IWQC2024_paper_14.pdf">extended abstract</a>]</li>
+  <li>Mondada, L. and Andrés-Martínez P. &#8220;Scalable Pattern Matching in Computation Graphs.&#8221; 
+  15th International Workshop on Graph Computation Models, GCM 2024_. [<a href="https://arxiv.org/abs/2402.13065">arxiv:2402.13065</a>]</li>
+  <li>Mondada, L. &#8220;Quantum Circuits in Additive Hilbert Space.&#8221;, preprint. [<a href="https://arxiv.org/abs/2111.01211">2111.01211</a>]</li>
+  <li>Corinzia, L., Penna, P., Mondada, L., Buhmann, J. M. (2019). &#8220;Exact Recovery for a Family of Community- Detection Generative Models.&#8221;
+   <em>IEEE International Symposium on Information Theory, ISIT 2019</em>, 415 – 419. [<a href="https://arxiv.org/abs/1901.06799">arxiv:1901.06799</a>]</li>
+  <li>Iten, R., Reardon-Smith, O., Mondada, L., Redmond, E., Kohli, R. S., &amp; Colbeck, R. (2019).
+   &#8220;Introduction to UniversalQCompiler.&#8221; preprint [<a href="https://arxiv.org/abs/1904.01072">arXiv:1904.01072</a>]</li>
+  <li>Mondada, L., Karim, M.E., and Mondada, F. &#8220;Electroencephalography as implicit communication channel for proximal interaction between humans and robot swarms.&#8221;
+   <em>Swarm Intelligence</em> 10.4 (2016): 247-265 [<a href="https://infoscience.epfl.ch/record/221632/files/EEG-HSI.pdf">pdf</a>].</li>
+</ol>
+
+<h2 id="other-past-research-and-essays">Other past research and essays</h2>
+<ul>
+  <li>Abstract Primitives for Quantum Computation. [<a href="/assets/docs/prim-review.pdf">Term paper</a>]</li>
+  <li>Simulating continuous-variable quantum computations on discrete devices.
+[<a href="/assets/docs/dissertation.pdf">MFoCS dissertation</a>]</li>
+  <li>An exploration of the meaning of Born&#8217;s rule. [<a href="/assets/docs/qi_ht20.pdf">miniproject</a>]</li>
+</ul>
+
+</main>
+
+
+    <button title="Toggle Theme" class="theme-toggle">
+  <svg viewBox="0 0 32 32" width="24" height="24" fill="currentcolor">
+    <circle cx="16" cy="16" r="14" fill="none" stroke="currentcolor" stroke-width="4"></circle>
+    <path d="
+             M 16 0
+             A 16 16 0 0 0 16 32
+             z">
+    </path>
+  </svg>
+</button>
+
+
+    
+      <footer>
+        <div class="dashed"></div>
+        <h3>Luca Mondada.</h3>
+        <ul class="horizontal-list">
+  
+    <li class="encoded-email">
+      
+        <span>first name at surname dot net</span>
+      
+      &nbsp;&nbsp;
+    </li>
+  
+    <li class="social">
+      
+        <a href="https://github.com/lmondada" target="_blank" >
+          
+            <svg class="svg-icon">
+              <use xlink:href="/assets/icons.svg#github"></use>
+            </svg>lmondada</a>
+      
+      &nbsp;&nbsp;
+    </li>
+  
+    <li class="social">
+      
+        <a href="https://twitter.com/lmondada" target="_blank" >
+          
+            <svg class="svg-icon">
+              <use xlink:href="/assets/icons.svg#twitter"></use>
+            </svg>@lmondada</a>
+      
+      &nbsp;&nbsp;
+    </li>
+  
+    <li class="social">
+      
+        <a href="https://linkedin.com/in/lmondada" target="_blank" >
+          
+            <svg class="svg-icon">
+              <use xlink:href="/assets/icons.svg#linkedin"></use>
+            </svg>in/lmondada</a>
+      
+      &nbsp;&nbsp;
+    </li>
+  
+</ul>
+
+      </footer>
+    </div>
+  </body>
+</html>
