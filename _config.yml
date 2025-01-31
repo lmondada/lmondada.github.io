@@ -7,10 +7,12 @@ placeholder_email: first name at last name dot net
 encoded_email: "&#107;&#117;&#046;&#099;&#097;&#046;&#120;&#111;&#046;&#115;&#099;&#064;&#097;&#100;&#097;&#100;&#110;&#111;&#109;&#046;&#097;&#099;&#117;&#108;"
 
 description: >- # this means to ignore newlines until "baseurl:"
-  DPhil student at the University of Oxford and part-time Research Software Developer at Cambridge Quantum Computing.
-  My research interests lie mainly in the areas of quantum circuit optimisation and near-term applications of differential programming
-  to NISQ devices.
-  I previously obtained a Distinction for his MSc in Mathematics and Foundation of Computer Science at Oxford
+  "Close-to-done" PhD student at the University of Oxford and Software Engineer at
+  Quantinuum.
+  My research interests lie mainly in the intersection of quantum compilation,
+  graph transformation systems and high-performance computing for Quantum.
+  I previously obtained a MSc in Mathematics and Foundation of Computer Science
+  (with Distinction) at the University of Oxford
   and two BSc degrees in Physics and Computer Science at ETH Zürich.
 
 baseurl: "" # the subpath of your site, e.g. /blog
