@@ -50,7 +50,7 @@ the meantime, always happy to chat.
    _Swarm Intelligence_ 10.4 (2016): 247-265 [[pdf](https://infoscience.epfl.ch/record/221632/files/EEG-HSI.pdf)].
 
 ## Other past research and essays
- * Abstract Primitives for Quantum Computation. [[Term paper]{{ '/assets/docs/prim-review.pdf' | relative_url }}]
+ * Abstract Primitives for Quantum Computation. [[Term paper]({{ '/assets/docs/prim-review.pdf' | relative_url }})]
  * Simulating continuous-variable quantum computations on discrete devices.
    [[MFoCS dissertation]({{ '/assets/docs/dissertation.pdf' | relative_url }})]
  * An exploration of the meaning of Born's rule. [[miniproject]({{ '/assets/docs/qi_ht20.pdf' | relative_url }})]
